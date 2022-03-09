@@ -20,7 +20,7 @@
     "noEmit": true,
     "jsx": "react-jsx",
 
-    /* custom Set */
+    /* ++ custom Set */
     "baseUrl": "."
     /* custom Set */
   },
