@@ -1,12 +1,14 @@
 import styled from "styled-components";
 
 const FlexItemMainC = styled.main`
-  flex-basis: 30%;
+  flex: 0 0 auto;
+  height: 100px;
   background-color: antiquewhite;
 `;
 
 const FlexItemSectionC = styled.section`
-  flex-basis: 30%;
+  flex: 0 0 auto;
+  height: 100px;
   background-color: aquamarine;
 `;
 
