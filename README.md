@@ -1,3 +1,16 @@
+# 컴포넌트 디자인
+
+**다양한 웹 엘리먼트를 디자인하고, 재사용할 수 있도록 컴포넌트화 해 놓은 프로젝트**
+
+###주요 스펙
+ - React, Typescript, storybook
+
+###디렉터리 구조
+
+###디플로이 경로
+
+
+<!--
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -44,3 +57,4 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+-->

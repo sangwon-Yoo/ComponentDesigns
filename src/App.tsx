@@ -1,14 +1,12 @@
-import React from 'react';
-import { FlexContainerL } from "src/styled/layout/flexContainerL";
-import { FlexItemMainC, FlexItemSectionC } from "src/styled/layout/flexItemC";
+import FlexboxWithMain from "./styled/components/layout/flexboxWithMain";
 
 function App() {
   return (
-      <FlexContainerL>
-        <FlexItemMainC />
-        <FlexItemSectionC />
-        <FlexItemSectionC />
-      </FlexContainerL>
+     <FlexboxWithMain lineYn={true}>
+         <div>hello</div>
+         <div>myNameis</div>
+         <div>Sangwon</div>
+     </FlexboxWithMain>
   );
 }
 

@@ -1,13 +1,13 @@
 import styled from "styled-components";
 
-const FlexItemMainC = styled.main`
+const FlexItemMainE = styled.main<{lineYn?: boolean; bgColor?: string}>`
   flex: 0 0 auto;
   /*
   flex: 0 0 auto 의미
   flex-grow = 0 : flex-basis 보다 커질 수 없음, flex-shrink = flex-basis 보다 줄어들 수 없음, flex-basis = auto : 콘텐츠 크기= 100px
   */
-  height: 100px;
-  background-color: antiquewhite;
+  ${(props) => props.lineYn ? 'border : solid #333333' : ''};
+  background-color: ${(props) => props.bgColor};
 
   //스마트폰 사이즈 이하
   @media all and (max-width: 319px) {
@@ -31,11 +31,11 @@ const FlexItemMainC = styled.main`
   }
 `;
 
-const FlexItemSectionC = styled.section`
+const FlexItemSectionE = styled.section<{lineYn?: boolean; bgColor?: string;}>`
   flex: 0 0 auto;
   height: 480px; //임시
-  border: solid #333333; //임
-  background-color: aquamarine;
+  ${(props) => props.lineYn ? 'border : solid #333333' : ''};
+  background-color: ${(props) => props.bgColor};
 
   //스마트폰 사이즈 이하
   @media all and (max-width: 319px) {
@@ -61,4 +61,4 @@ const FlexItemSectionC = styled.section`
   }
 `;
 
-export { FlexItemMainC, FlexItemSectionC };
+export { FlexItemMainE, FlexItemSectionE };
