@@ -1,12 +1,12 @@
-import FlexboxWithMain from "./styled/components/layout/flexboxWithMain";
+import FlexboxWithMainB from "src/components/block/layout/flexboxWithMainB";
 
 function App() {
   return (
-     <FlexboxWithMain lineYn={true}>
+     <FlexboxWithMainB>
          <div>hello</div>
          <div>myNameis</div>
          <div>Sangwon</div>
-     </FlexboxWithMain>
+     </FlexboxWithMainB>
   );
 }
 
