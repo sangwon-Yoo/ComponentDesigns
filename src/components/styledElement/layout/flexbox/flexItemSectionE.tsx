@@ -2,8 +2,8 @@ import styled from "styled-components";
 
 const StyledFlexItemSection = styled.section<{bgColor?: string; height?: string}>`
   flex: 0 0 auto;
-  height: ${(props) => props.height || '90vh'};
-  background-color: ${(props) => props.bgColor || props.theme.bgColor.block_content};
+  height: ${props => props.height || '90vh'};
+  background-color: ${props => props.bgColor || props.theme.bgColor.block_content};
 
   //스마트폰 사이즈 이하
   @media all and (max-width: 319px) {

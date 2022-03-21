@@ -1,12 +1,13 @@
 import FlexboxWithMainB from "components/block/layout/flexboxWithMainB";
-import 'styles/reset.css';
 import { ThemeProvider } from "styled-components";
 import { myBlogTheme } from "styles/themes";
+import GlobalStyle from "./styles/globalStyle";
 
 function App() {
   return (
       <ThemeProvider theme={myBlogTheme}>
-          <FlexboxWithMainB /*bgColorMain={'skyblue'} bgColorSection={'gray'}*/>
+          <GlobalStyle />
+          <FlexboxWithMainB>
               <div>hello</div>
               <div>myNameis</div>
               <div>Sangwon</div>
