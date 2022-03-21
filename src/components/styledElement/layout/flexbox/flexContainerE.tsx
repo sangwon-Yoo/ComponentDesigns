@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import './reset.css';
 
 const StyledFlexContainer = styled.div<{bgColor?: string;}>`
   height: 100vh;

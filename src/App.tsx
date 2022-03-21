@@ -1,8 +1,9 @@
-import FlexboxWithMainB from "src/components/block/layout/flexboxWithMainB";
+import FlexboxWithMainB from "components/block/layout/flexboxWithMainB";
+import 'styles/reset.css';
 
 function App() {
   return (
-     <FlexboxWithMainB>
+     <FlexboxWithMainB bgColorMain={'skyblue'} bgColorSection={'gray'}>
          <div>hello</div>
          <div>myNameis</div>
          <div>Sangwon</div>

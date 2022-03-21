@@ -21,7 +21,7 @@
     "jsx": "react-jsx",
 
     /* ++ custom Set */
-    "baseUrl": "./"
+    "baseUrl": "./src"
     /* custom Set */
   },
   "include": [
