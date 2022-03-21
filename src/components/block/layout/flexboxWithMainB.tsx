@@ -1,4 +1,4 @@
-import React, {ReactNode} from "react";
+import React, { ReactNode } from "react";
 import StyledFlexContainer from "../../styledElement/layout/flexbox/flexContainerE";
 import StyledFlexItemMain from "../../styledElement/layout/flexbox/flexItemMainE";
 import StyledFlexItemSection from "../../styledElement/layout/flexbox/flexItemSectionE";
@@ -9,7 +9,7 @@ interface flexboxWithMainProps {
     children: ReactNode;
 }
 
-const FlexboxWithMainB = ({ bgColorMain = '#fff', bgColorSection = '#fff', children }: flexboxWithMainProps) => {
+const FlexboxWithMainB = ({ bgColorMain, bgColorSection, children }: flexboxWithMainProps) => {
 
     const sections = React.Children.map(children, (child) =>
         <StyledFlexItemSection bgColor={bgColorSection}>

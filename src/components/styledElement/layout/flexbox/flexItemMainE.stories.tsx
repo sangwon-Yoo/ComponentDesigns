@@ -1,5 +1,5 @@
 import StyledFlexItemMain from "./flexItemMainE";
-import {ComponentMeta, ComponentStory} from "@storybook/react";
+import { ComponentMeta, ComponentStory } from "@storybook/react";
 
 export default {
     title: 'components/styledElement/layout/flexbox',

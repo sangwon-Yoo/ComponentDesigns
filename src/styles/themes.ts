@@ -5,7 +5,7 @@ interface theme {
     sizeUnit: Record<string, Record<string, string>>;
 }
 
-const myBlog: theme = {
+const myBlogTheme: theme = {
     bgColor: {
         block_body: '#ffffff',
         block_content: '#deeaee',
@@ -45,4 +45,4 @@ const myBlog: theme = {
     }
 };
 
-export { myBlog };
+export { myBlogTheme };
