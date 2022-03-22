@@ -60,9 +60,15 @@ const GlobalStyle = createGlobalStyle`
       Global Custom CSS Start
   */
 
-  html, body {
+  html {
     height: 100%;
     width: 100%;
+  }
+
+  body {
+    height: 100%;
+    width: 100%;
+    background-color: ${props => props.theme.color.bg.primary || '#ffffff'};
   }
 
   /*
