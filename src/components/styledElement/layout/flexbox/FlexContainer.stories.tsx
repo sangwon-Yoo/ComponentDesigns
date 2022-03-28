@@ -1,4 +1,4 @@
-import StyledFlexContainer from "./flexContainerE";
+import StyledFlexContainer from "./StyledFlexContainer";
 import { ComponentMeta, ComponentStory } from "@storybook/react";
 
 export default {
@@ -11,6 +11,6 @@ export default {
 
 const Template: ComponentStory<typeof StyledFlexContainer> = (args) => <StyledFlexContainer {...args} />;
 
-const flexContainer = Template.bind({});
+const StoryOfFlexContainer = Template.bind({});
 
-export { flexContainer };
+export { StoryOfFlexContainer };

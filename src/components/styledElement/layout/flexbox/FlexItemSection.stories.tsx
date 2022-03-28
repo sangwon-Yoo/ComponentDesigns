@@ -1,4 +1,4 @@
-import StyledFlexItemSection from "./flexItemSectionE";
+import StyledFlexItemSection from "./StyledFlexItemSection";
 import { ComponentMeta, ComponentStory } from "@storybook/react";
 
 export default {
@@ -11,6 +11,6 @@ export default {
 
 const Template: ComponentStory<typeof StyledFlexItemSection> = (args) => <StyledFlexItemSection {...args} />;
 
-const flexItemSection = Template.bind({});
+const StoryOfFlexItemSection = Template.bind({});
 
-export { flexItemSection };
+export { StoryOfFlexItemSection };

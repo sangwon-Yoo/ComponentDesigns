@@ -1,15 +1,15 @@
 import React, { ReactNode } from "react";
-import StyledFlexContainer from "../../styledElement/layout/flexbox/flexContainerE";
-import StyledFlexItemMain from "../../styledElement/layout/flexbox/flexItemMainE";
-import StyledFlexItemSection from "../../styledElement/layout/flexbox/flexItemSectionE";
+import StyledFlexContainer from "../../styledElement/layout/flexbox/StyledFlexContainer";
+import StyledFlexItemMain from "../../styledElement/layout/flexbox/StyledFlexItemMain";
+import StyledFlexItemSection from "../../styledElement/layout/flexbox/StyledFlexItemSection";
 
-interface flexboxWithMainProps {
+interface flexLayoutWithMainProps {
     bgColorMain?: string;
     bgColorSection?: string;
     children: ReactNode;
 }
 
-const FlexboxWithMainB = ({ bgColorMain, bgColorSection, children }: flexboxWithMainProps) => {
+const FlexLayoutWithMain = ({ bgColorMain, bgColorSection, children }: flexLayoutWithMainProps) => {
 
     const sections = React.Children.map(children, (child) =>
         <StyledFlexItemSection bgColor={bgColorSection}>
@@ -25,4 +25,4 @@ const FlexboxWithMainB = ({ bgColorMain, bgColorSection, children }: flexboxWith
     );
 };
 
-export default FlexboxWithMainB;
+export default FlexLayoutWithMain;

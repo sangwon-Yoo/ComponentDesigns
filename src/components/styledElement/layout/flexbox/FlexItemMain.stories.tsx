@@ -1,4 +1,4 @@
-import StyledFlexItemMain from "./flexItemMainE";
+import StyledFlexItemMain from "./StyledFlexItemMain";
 import { ComponentMeta, ComponentStory } from "@storybook/react";
 
 export default {
@@ -11,6 +11,6 @@ export default {
 
 const Template: ComponentStory<typeof StyledFlexItemMain> = (args) => <StyledFlexItemMain {...args} />;
 
-const flexItemMain = Template.bind({});
+const StoryOfFlexItemMain = Template.bind({});
 
-export { flexItemMain };
+export { StoryOfFlexItemMain };
