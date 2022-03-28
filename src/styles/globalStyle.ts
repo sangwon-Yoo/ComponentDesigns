@@ -8,6 +8,28 @@ const GlobalStyle = createGlobalStyle`
      License: none (public domain)
   */
 
+  /* ++ fonts */
+  @font-face {
+    font-family: 'NotoSansKR-Bold';
+    font-weight: 700;
+    src: local('NotoSansKR-Bold'),
+    url('/src/styles/font/NotoSansKR/NotoSansKR-Bold.otf') format('otf');
+  }
+
+  @font-face {
+    font-family: 'NotoSansKR-Regular';
+    font-weight: 400;
+    src: local('NotoSansKR-Regular'),
+    url('/src/styles/font/NotoSansKR/NotoSansKR-Regular.otf') format('otf');
+  }
+
+  @font-face {
+    font-family: 'NotoSansKR-Thin';
+    font-weight: 100;
+    src: local('NotoSansKR-Thin'),
+    url('/src/styles/font/NotoSansKR/NotoSansKR-Thin.otf') format('otf');
+  }
+  
   /*
       ++ 'main' tag
   */
@@ -61,6 +83,8 @@ const GlobalStyle = createGlobalStyle`
   */
 
   html {
+    font-family: NotoSansKR-Regular;
+    font-size: 16px;
     height: 100%;
     width: 100%;
   }

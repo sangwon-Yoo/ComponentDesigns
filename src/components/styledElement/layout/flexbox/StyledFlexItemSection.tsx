@@ -17,7 +17,7 @@ const StyledFlexItemSection = styled.section<{bgColor?: string; height?: string}
   @media all and (min-width: 769px) and (max-width: 1024px) {
     margin: 0 10% 0 10%;
   }
-  //pc 1024px ~
+  //pc 1024px ~ 1440px
   @media all and (min-width: 1025px) and (max-width: 1440px){
     margin: 0 10% 0 10%;
   }
