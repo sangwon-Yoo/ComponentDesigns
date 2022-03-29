@@ -1,5 +1,5 @@
-import StyledFlexItemSection, { StyledFlexItemSectionProps } from "./StyledFlexItemSection";
 import { ComponentMeta, ComponentStory } from "@storybook/react";
+import StyledFlexItemSection, { StyledFlexItemSectionProps } from "./StyledFlexItemSection";
 
 function WrapperStyled(props: StyledFlexItemSectionProps) {
     return <StyledFlexItemSection {...props} />;

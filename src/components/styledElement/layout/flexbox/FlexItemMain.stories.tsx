@@ -1,5 +1,5 @@
-import StyledFlexItemMain, { StyledFlexItemMainProps } from "./StyledFlexItemMain";
 import { ComponentMeta, ComponentStory } from "@storybook/react";
+import StyledFlexItemMain, { StyledFlexItemMainProps } from "./StyledFlexItemMain";
 
 function WrapperStyled(props : StyledFlexItemMainProps) {
     return <StyledFlexItemMain {...props}/>;

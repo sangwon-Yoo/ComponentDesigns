@@ -94,6 +94,12 @@ const GlobalStyle = createGlobalStyle`
     width: 100%;
     background-color: ${props => props.theme.color.bg.primary || '#ffffff'};
   }
+  
+  //storybook 용
+  #root {
+    height: 100%;
+    width: 100%;
+  }
 
   /*
       Global Custom CSS End

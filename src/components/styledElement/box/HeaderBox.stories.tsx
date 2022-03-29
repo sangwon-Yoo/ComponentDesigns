@@ -1,5 +1,5 @@
-import StyledHeaderBox, { StyledHeaderBoxProps } from "./StyledHeaderBox";
 import { ComponentMeta, ComponentStory } from "@storybook/react";
+import StyledHeaderBox, { StyledHeaderBoxProps } from "./StyledHeaderBox";
 
 function WrapperStyled(props: StyledHeaderBoxProps) {
    return <StyledHeaderBox {...props} />;

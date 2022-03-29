@@ -1,5 +1,5 @@
-import StyledFlexContainer, { StyledFlexContainerProps } from "./StyledFlexContainer";
 import { ComponentMeta, ComponentStory } from "@storybook/react";
+import StyledFlexContainer, { StyledFlexContainerProps } from "./StyledFlexContainer";
 
 function WrapperStyled(props : StyledFlexContainerProps) {
   return <StyledFlexContainer {...props}/>;
@@ -16,5 +16,10 @@ export default {
 const Template: ComponentStory<typeof WrapperStyled> = (args) => <WrapperStyled {...args} />
 
 const SFlexContainer = Template.bind({});
+
+SFlexContainer.args = {
+  bgColor: '#dddddf',
+  directionRow: true
+};
 
 export { SFlexContainer };
