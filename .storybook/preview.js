@@ -1,7 +1,7 @@
-import { ThemeProvider } from 'styled-components';
 import { addDecorator } from '@storybook/react';
-import { withThemes } from "@react-theming/storybook-addon/dist/preview";
+import { ThemeProvider } from 'styled-components';
 import { myBlogTheme } from '../src/styles/themes';
+import { withThemes } from "@react-theming/storybook-addon/dist/preview";
 
 addDecorator(withThemes(ThemeProvider, [myBlogTheme]));
 

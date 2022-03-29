@@ -1,16 +1,20 @@
-import StyledFlexItemMain from "./StyledFlexItemMain";
+import StyledFlexItemMain, { StyledFlexItemMainProps } from "./StyledFlexItemMain";
 import { ComponentMeta, ComponentStory } from "@storybook/react";
+
+function WrapperStyled(props : StyledFlexItemMainProps) {
+    return <StyledFlexItemMain {...props}/>;
+};
 
 export default {
     title: 'components/styledElement/layout/flexbox',
-    component: StyledFlexItemMain,
+    component: WrapperStyled,
     argTypes: {
         bgColor: { control: 'color' },
     },
-} as ComponentMeta<typeof StyledFlexItemMain>;
+} as ComponentMeta<typeof WrapperStyled>;
 
-const Template: ComponentStory<typeof StyledFlexItemMain> = (args) => <StyledFlexItemMain {...args} />;
+const Template: ComponentStory<typeof WrapperStyled> = (args) => <WrapperStyled {...args} />;
 
-const StoryOfFlexItemMain = Template.bind({});
+const SFlexItemMain = Template.bind({});
 
-export { StoryOfFlexItemMain };
+export { SFlexItemMain };

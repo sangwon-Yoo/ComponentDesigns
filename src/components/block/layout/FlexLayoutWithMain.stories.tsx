@@ -17,6 +17,6 @@ const Template: ComponentStory<typeof FlexLayoutWithMain> = (args) =>
         <div>section3</div>
     </FlexLayoutWithMain>;
 
-const StoryOfFlexLayoutWithMain = Template.bind({});
+const SFlexLayoutWithMain = Template.bind({});
 
-export { StoryOfFlexLayoutWithMain };
+export { SFlexLayoutWithMain };

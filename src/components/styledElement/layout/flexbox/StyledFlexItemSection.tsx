@@ -1,6 +1,11 @@
 import styled from "styled-components";
 
-const StyledFlexItemSection = styled.section<{bgColor?: string; height?: string}>`
+export interface StyledFlexItemSectionProps {
+    bgColor?: string;
+    height?: string;
+}
+
+const StyledFlexItemSection = styled.section<StyledFlexItemSectionProps>`
   flex: 0 0 auto;
   height: ${props => props.height || '90vh'};
   background-color: ${props => props.bgColor || props.theme.color.bg.secondary};

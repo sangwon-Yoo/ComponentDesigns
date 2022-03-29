@@ -1,6 +1,11 @@
 import styled from "styled-components";
 
-const StyledFlexItemMain = styled.main<{bgColor?: string; height?: string}>`
+export interface StyledFlexItemMainProps {
+    bgColor?: string;
+    height?: string;
+}
+
+const StyledFlexItemMain = styled.main<StyledFlexItemMainProps>`
   flex: 0 0 auto;
   height: ${props => props.height || '50vh'};
   /*

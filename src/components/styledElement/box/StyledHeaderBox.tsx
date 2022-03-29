@@ -1,7 +1,13 @@
 import styled from "styled-components";
 
-const StyledFixedTopBox = styled.div<{heightM: string; heightP: string; bgColor?: string;}>`
-  position: fixed;
+export interface StyledHeaderBoxProps {
+    heightM: string;
+    heightP: string;
+    bgColor?: string;
+}
+
+const StyledHeaderBox = styled.div<StyledHeaderBoxProps>`
+  //position: fixed;
   width: 100%;
   z-index: 10;
   top: 0;
@@ -32,4 +38,4 @@ const StyledFixedTopBox = styled.div<{heightM: string; heightP: string; bgColor?
   }
 `;
 
-export default StyledFixedTopBox;
+export default StyledHeaderBox;

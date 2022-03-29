@@ -1,6 +1,10 @@
 import styled from "styled-components";
 
-const StyledFlexContainer = styled.div<{bgColor?: string;}>`
+export interface StyledFlexContainerProps {
+    bgColor? : string;
+}
+
+const StyledFlexContainer = styled.div<StyledFlexContainerProps>`
   height: 100vh;
   width: 100vw;
   overflow-y: auto;       //넘치면 스크롤
