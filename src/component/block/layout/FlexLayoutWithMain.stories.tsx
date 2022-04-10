@@ -2,11 +2,13 @@ import { ComponentMeta, ComponentStory } from "@storybook/react";
 import FlexLayoutWithMain from "./FlexLayoutWithMain";
 
 export default {
-    title: 'components/block/layout',
+    title: 'component/block/viewport',
     component: FlexLayoutWithMain,
     argTypes: {
+        bgColorBox: { control: 'color' },
         bgColorMain: { control: 'color' },
         bgColorSection: { control: 'color' },
+        bgColorContainer: { control: 'color' },
     },
 } as ComponentMeta<typeof FlexLayoutWithMain>;
 

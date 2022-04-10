@@ -6,7 +6,7 @@ function WrapperStyled(props : StyledFlexContainerProps) {
 };
 
 export default {
-    title: 'components/styledElement/layout/flexbox',
+    title: 'component/styledElement/container/flex',
     component: WrapperStyled,
     argTypes: {
         bgColor: { control: 'color' },
@@ -18,8 +18,9 @@ const Template: ComponentStory<typeof WrapperStyled> = (args) => <WrapperStyled 
 const SFlexContainer = Template.bind({});
 
 SFlexContainer.args = {
-  bgColor: '#dddddf',
-  directionRow: true
+    bgColor: '#dddddf',
+    directionRow: false,
+    scroll: true,
 };
 
 export { SFlexContainer };

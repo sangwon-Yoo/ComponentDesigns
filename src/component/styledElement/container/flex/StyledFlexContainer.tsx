@@ -2,21 +2,24 @@ import styled, { css } from "styled-components";
 
 export interface StyledFlexContainerProps {
     bgColor? : string;
-    noScroll? : boolean;
+    scroll? : boolean;
     directionRow?: boolean;
 }
 
 const StyledFlexContainer = styled.div<StyledFlexContainerProps>`
-  //++확장성을 위해 100vh 대신 %를 씀
+  /* ++확장성을 위해 100vh 대신 %를 씀 */
   height: 100%;
   width: 100%;
   display: flex;
+  
+  /* flex 방향 설정 */
   ${props => props.directionRow ? css`
     flex-direction: row;
-    overflow-x: ${props.noScroll ? 'hidden' : 'auto'};
+    justify-content: space-between;
+    overflow-x: ${props.scroll ? 'auto' : 'hidden'};
   ` : css`
     flex-direction: column;
-    overflow-y: ${props.noScroll ? 'hidden' : 'auto'}; //넘치면 스크롤 or hidden
+    overflow-y: ${props.scroll ? 'auto' : 'hidden'}; //넘치면 스크롤 or hidden
   `}
   background-color: ${props => props.bgColor || props.theme.color.bg.primary};
 `;

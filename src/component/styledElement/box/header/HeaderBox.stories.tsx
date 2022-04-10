@@ -6,7 +6,7 @@ function WrapperStyled(props: StyledHeaderBoxProps) {
 }
 
 export default {
-    title: 'components/styledElement/box',
+    title: 'component/styledElement/box/header',
     component: WrapperStyled,
     argTypes: {
         bgColor: { control: 'color' }
@@ -15,12 +15,12 @@ export default {
 
 const Template: ComponentStory<typeof WrapperStyled> = (args) => <WrapperStyled {...args} />;
 
-const SFixedTopBox = Template.bind({});
+const SHeaderBox = Template.bind({});
 
-SFixedTopBox.args = {
+SHeaderBox.args = {
     heightM: '3rem',
     heightP: '5rem',
     bgColor: '#fff',
 };
 
-export { SFixedTopBox };
+export { SHeaderBox };

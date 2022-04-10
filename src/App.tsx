@@ -1,7 +1,7 @@
 import { ThemeProvider } from "styled-components";
 import { myBlogTheme } from "styles/themes";
 import GlobalStyle from "./styles/globalStyle";
-import FlexLayoutWithMain from "components/block/layout/FlexLayoutWithMain";
+import FlexLayoutWithMain from "component/block/layout/FlexLayoutWithMain";
 
 function App() {
   return (
