@@ -4,9 +4,10 @@ import GlobalStyle from "../src/styles/globalStyle";
 import { myBlogTheme } from '../src/styles/themes';
 import { withThemes } from "@react-theming/storybook-addon/dist/preview";
 
-
+/*
 addDecorator(story => <><GlobalStyle />{story()}</>);
 addDecorator(withThemes(ThemeProvider, [myBlogTheme]));
+*/
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
@@ -19,3 +20,12 @@ export const parameters = {
   //++ storybook sb-main-padded 클래스 padding 제거
   layout: 'fullscreen',
 }
+
+export const decorators = [
+  (Story) => (
+      <ThemeProvider theme={myBlogTheme}>
+        <GlobalStyle />
+        <Story />
+      </ThemeProvider>
+  ),
+];

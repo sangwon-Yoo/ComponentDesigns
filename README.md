@@ -2,19 +2,19 @@
 
 **다양한 웹 엘리먼트를 디자인하고, 재사용할 수 있도록 컴포넌트화 해 놓은 프로젝트**
 
-###주요 스펙
+### 주요 스펙
  - React, Typescript, storybook
 
-###디렉터리 구조
+### 디렉터리 구조
 
 
-###디플로이 경로
+### 디플로이 경로
 
-###디자인 규칙
+### 이 프로젝트의 디자인 규칙
 - Component는 재사용 할 수 있는 디자인 산출물이다.
 - Component 하위의 StyledElement는 Styled-Component로 만들어진 최소 디자인 컴포넌트 단위이다.
 - Component 하위의 Block은 StyledElement를 조합하여 만들어진다.
-- Feature는 Block에 비즈니스 로직을 입힌 특징(Feature)이 발현되는 모듈이다. 따라서 재사용 할 수 없다. "Block Component + Logic" = "Feature" 이라고 봐도 무방하다.
+- Feature는 Block에 비즈니스 로직을 입힌 특징(Feature)이 발현되는 모듈이다. 따라서 재사용 할 수 없다. "Block Component + Logic" = "Feature" 의 규칙을 적용한다.
 - Block은 "Box > Container > Item" 으로 구성된다. 여기서 Item은 StyledElement가 되거나 또다른 Block이 된다.
 
 
