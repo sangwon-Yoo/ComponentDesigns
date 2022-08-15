@@ -5,7 +5,7 @@ export interface StyledFlexItemMainProps {
     height?: string;
 }
 
-const StyledFlexItemMain = styled.main<StyledFlexItemMainProps>`
+const   StyledFlexItemMain = styled.main<StyledFlexItemMainProps>`
   flex: 0 0 auto;
   height: ${props => props.height || '50vh'};
   /*

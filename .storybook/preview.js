@@ -1,7 +1,7 @@
 import { addDecorator } from '@storybook/react';
 import { ThemeProvider } from 'styled-components';
-import GlobalStyle from "../src/styles/globalStyle";
-import { myBlogTheme } from '../src/styles/themes';
+import GlobalStyle from "../src/style/globalStyle";
+import { myBlogTheme } from '../src/style/themes';
 import { withThemes } from "@react-theming/storybook-addon/dist/preview";
 
 /*

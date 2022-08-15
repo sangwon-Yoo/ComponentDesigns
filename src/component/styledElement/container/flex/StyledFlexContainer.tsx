@@ -1,9 +1,8 @@
 import styled, { css } from "styled-components";
 
 export interface StyledFlexContainerProps {
-    bgColor? : string;
-    scroll? : boolean;
-    directionRow?: boolean;
+    bgColor?: string;
+    direction: 'row' | 'column';
 }
 
 const StyledFlexContainer = styled.div<StyledFlexContainerProps>`
@@ -13,14 +12,9 @@ const StyledFlexContainer = styled.div<StyledFlexContainerProps>`
   display: flex;
   
   /* flex 방향 설정 */
-  ${props => props.directionRow ? css`
-    flex-direction: row;
-    justify-content: space-between;
-    overflow-x: ${props.scroll ? 'auto' : 'hidden'};
-  ` : css`
-    flex-direction: column;
-    overflow-y: ${props.scroll ? 'auto' : 'hidden'}; //넘치면 스크롤 or hidden
-  `}
+  flex-direction: ${props => props.direction};
+  justify-content: space-between; //자식들간에 공간이 발생되어야하지만, height100% 이기 때문에 자식들의 크기가 곧 이 컨테이너의 크기 > 즉 스페이스 없음. 
+  
   background-color: ${props => props.bgColor || props.theme.color.bg.primary};
 `;
 

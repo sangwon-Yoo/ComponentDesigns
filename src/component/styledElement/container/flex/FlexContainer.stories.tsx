@@ -19,8 +19,7 @@ const SFlexContainer = Template.bind({});
 
 SFlexContainer.args = {
     bgColor: '#dddddf',
-    directionRow: false,
-    scroll: true,
+    direction: 'column'
 };
 
 export { SFlexContainer };

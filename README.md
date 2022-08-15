@@ -12,10 +12,14 @@
 
 ### 이 프로젝트의 디자인 규칙
 - Component는 재사용 할 수 있는 디자인 산출물이다.
-- Component 하위의 StyledElement는 Styled-Component로 만들어진 최소 디자인 컴포넌트 단위이다.
+- Component StyledElement는 Styled-Component로 만들어진 최소 디자인 컴포넌트 단위이다.
 - Component 하위의 Block은 StyledElement를 조합하여 만들어진다.
 - Feature는 Block에 비즈니스 로직을 입힌 특징(Feature)이 발현되는 모듈이다. 따라서 재사용 할 수 없다. "Block Component + Logic" = "Feature" 의 규칙을 적용한다.
-- Block은 "Box > Container > Item" 으로 구성된다. 여기서 Item은 StyledElement가 되거나 또다른 Block이 된다.
+- 여기서 Logic은 재사용할 수 있도록 hook, 일반 함수 등으로 뺼 수 있다.
+- Block은 "Box > Container > Item" 계층으로 구성된다.
+- 순서는 중요하지만, 중간에 Box, Container 등의 생략은 가능하다. 
+<!--여기서 Item은 StyledElement가 되거나 html 기본 Element가 된다
+- 그 하위에 또다른 Block이 온다.-->
 
 
 
