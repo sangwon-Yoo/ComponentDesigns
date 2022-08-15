@@ -15,7 +15,7 @@ const HeaderWithFlex = ({ bgColorDiv, bigColorContainer, widthDivLeft, widthDivM
 
     return (
         <StyledHeaderBox heightP={'5rem'} heightM={'3rem'}>
-            <StyledFlexContainer bgColor={bigColorContainer} directionRow={true} scroll={false}>
+            <StyledFlexContainer bgColor={bigColorContainer} direction={'column'}>
                 <StyledFlexItemDiv width={widthDivLeft} bgColor={bgColorDiv}>(1)</StyledFlexItemDiv>
                 <StyledFlexItemDiv width={widthDivMid} bgColor={bgColorDiv}>(2)</StyledFlexItemDiv>
                 <StyledFlexItemDiv width={widthDivRight} bgColor={bgColorDiv}>(3)</StyledFlexItemDiv>

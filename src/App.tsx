@@ -1,17 +1,16 @@
 import { ThemeProvider } from "styled-components";
-import { myBlogTheme } from "styles/themes";
-import GlobalStyle from "./styles/globalStyle";
-import FlexLayoutWithMain from "component/block/layout/FlexLayoutWithMain";
+import { myBlogTheme } from "style/themes";
+import GlobalStyle from "./style/globalStyle";
+import StyledViewportBox from "./component/styledElement/box/viewport/StyledViewportBox";
+import BlogHome from "./pages/BlogHome";
 
 function App() {
   return (
       <ThemeProvider theme={myBlogTheme}>
           <GlobalStyle />
-          <FlexLayoutWithMain>
-              <div>hello</div>
-              <div>myNameis</div>
-              <div>Sangwon</div>
-          </FlexLayoutWithMain>
+          {/*<StyledViewportBox>*/}
+              <BlogHome />
+          {/*</StyledViewportBox>*/}
       </ThemeProvider>
 
   );

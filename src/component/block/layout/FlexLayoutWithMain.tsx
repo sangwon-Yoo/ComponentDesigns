@@ -1,4 +1,4 @@
-import React, { ReactNode } from "react";
+import React, {ReactChild, ReactChildren, ReactNode} from "react";
 import StyledFlexContainer from "../../styledElement/container/flex/StyledFlexContainer";
 import StyledFlexItemMain from "../../styledElement/item/flex/StyledFlexItemMain";
 import StyledFlexItemSection from "../../styledElement/item/flex/StyledFlexItemSection";
@@ -18,7 +18,17 @@ interface flexLayoutWithMainProps {
 
 const FlexLayoutWithMain = ({ bgColorBox, bgColorContainer, bgColorMain, bgColorSection, children, directionRowContainer = false, scrollContainer = true }: flexLayoutWithMainProps) => {
 
-    const sections = React.Children.map(children, (child) =>
+    let mainChild: ReactNode = null;
+    let sectionChildren: Array<ReactNode> = [];
+    React.Children.forEach(children, (child, idx) => {
+        if(idx == 0) {
+            mainChild = child;
+        } else {
+            sectionChildren.push(child);
+        }
+    });
+
+    const sections = React.Children.map(sectionChildren, (child, idx) =>
         <StyledFlexItemSection bgColor={bgColorSection}>
             {child}
         </StyledFlexItemSection>
@@ -26,8 +36,10 @@ const FlexLayoutWithMain = ({ bgColorBox, bgColorContainer, bgColorMain, bgColor
 
     return (
         <StyledViewportBox bgColor={bgColorBox}>
-            <StyledFlexContainer directionRow={directionRowContainer} scroll={scrollContainer} bgColor={bgColorContainer}>
-                <StyledFlexItemMain bgColor={bgColorMain} />
+            <StyledFlexContainer direction={'column'} bgColor={bgColorContainer}>
+                <StyledFlexItemMain bgColor={bgColorMain}>
+                    {mainChild}
+                </StyledFlexItemMain>
                 {sections}
             </StyledFlexContainer>
         </StyledViewportBox>
