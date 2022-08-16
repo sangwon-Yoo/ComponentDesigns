@@ -7,7 +7,7 @@ export interface StyledHeaderBoxProps {
 }
 
 const StyledHeaderBox = styled.div<StyledHeaderBoxProps>`
-  //position: fixed;
+  position: fixed;
   width: 100%;
   z-index: 10;
   top: 0;

@@ -1,16 +1,16 @@
 import { ComponentMeta, ComponentStory } from "@storybook/react";
-import HeaderWithFlex from "./HeaderWithFlex";
+import HeaderBlock from "./HeaderBlock";
 
 export default {
     title: 'component/block/header',
-    component: HeaderWithFlex,
+    component: HeaderBlock,
     argTypes: {
         bgColorDiv: { control: 'color' },
         bigColorContainer: { control: 'color' },
     },
-} as ComponentMeta<typeof HeaderWithFlex>;
+} as ComponentMeta<typeof HeaderBlock>;
 
-const Template: ComponentStory<typeof HeaderWithFlex> = (args) => <HeaderWithFlex {...args} />;
+const Template: ComponentStory<typeof HeaderBlock> = (args) => <HeaderBlock {...args} />;
 
 const SHeaderWithFlex = Template.bind({});
 

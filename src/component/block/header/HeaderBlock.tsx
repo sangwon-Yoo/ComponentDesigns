@@ -11,11 +11,13 @@ interface headerWithFlexProps {
     widthDivRight?: string;
 }
 
-const HeaderWithFlex = ({ bgColorDiv, bigColorContainer, widthDivLeft, widthDivMid, widthDivRight }: headerWithFlexProps) => {
+export default function HeaderBlock({ bgColorDiv, bigColorContainer, widthDivLeft, widthDivMid, widthDivRight }: headerWithFlexProps) {
+
+    /* feature로 쓸 경우 여기에 비즈니스 로직을 사용 */
 
     return (
         <StyledHeaderBox heightP={'5rem'} heightM={'3rem'}>
-            <StyledFlexContainer bgColor={bigColorContainer} direction={'column'}>
+            <StyledFlexContainer bgColor={bigColorContainer} direction={'row'}>
                 <StyledFlexItemDiv width={widthDivLeft} bgColor={bgColorDiv}>(1)</StyledFlexItemDiv>
                 <StyledFlexItemDiv width={widthDivMid} bgColor={bgColorDiv}>(2)</StyledFlexItemDiv>
                 <StyledFlexItemDiv width={widthDivRight} bgColor={bgColorDiv}>(3)</StyledFlexItemDiv>
@@ -23,5 +25,3 @@ const HeaderWithFlex = ({ bgColorDiv, bigColorContainer, widthDivLeft, widthDivM
         </StyledHeaderBox>
     );
 };
-
-export default HeaderWithFlex;
