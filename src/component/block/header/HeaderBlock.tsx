@@ -1,6 +1,7 @@
 import StyledFlexContainer from "../../styledElement/container/flex/StyledFlexContainer";
 import StyledFlexItemDiv from "../../styledElement/item/flex/StyledFlexItemDiv";
 import StyledHeaderBox from "../../styledElement/box/header/StyledHeaderBox";
+import StyledHeaderContainer from "../../styledElement/container/flex/StyledHeaderContainer";
 
 interface headerWithFlexProps {
     bigColorContainer?: string;
@@ -17,11 +18,11 @@ export default function HeaderBlock({ bgColorDiv, bigColorContainer, widthDivLef
 
     return (
         <StyledHeaderBox heightP={'5rem'} heightM={'3rem'}>
-            <StyledFlexContainer bgColor={bigColorContainer} direction={'row'}>
+            <StyledHeaderContainer bgColor={bigColorContainer} direction={'row'}>
                 <StyledFlexItemDiv width={widthDivLeft} bgColor={bgColorDiv}>(1)</StyledFlexItemDiv>
                 <StyledFlexItemDiv width={widthDivMid} bgColor={bgColorDiv}>(2)</StyledFlexItemDiv>
                 <StyledFlexItemDiv width={widthDivRight} bgColor={bgColorDiv}>(3)</StyledFlexItemDiv>
-            </StyledFlexContainer>
+            </StyledHeaderContainer>
         </StyledHeaderBox>
     );
 };
