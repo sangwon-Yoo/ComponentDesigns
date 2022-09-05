@@ -9,15 +9,15 @@ export default function BlogHome() {
 
     return (
         <>
-        <HeaderBlock />
-        <StyledFlexContainer direction={'column'} bgColor={'#333333'}>
-            <StyledFlexItemMain bgColor={'#444444'}>
-            </StyledFlexItemMain>
-            <StyledFlexItemSection bgColor={'#555555'}>
-            </StyledFlexItemSection>
-            <StyledFlexItemSection bgColor={'#666666'}>
-            </StyledFlexItemSection>
-        </StyledFlexContainer>
-            </>
+            <HeaderBlock />
+            <StyledFlexContainer direction={'column'} bgColor={'#333333'}>
+                <StyledFlexItemMain bgColor={'#444444'}>
+                </StyledFlexItemMain>
+                <StyledFlexItemSection bgColor={'#555555'}>
+                </StyledFlexItemSection>
+                <StyledFlexItemSection bgColor={'#666666'}>
+                </StyledFlexItemSection>
+            </StyledFlexContainer>
+        </>
     );
 }

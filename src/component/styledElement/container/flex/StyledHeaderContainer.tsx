@@ -8,7 +8,7 @@ export interface StyledHeaderContainer {
 export const StyledHeaderContainer = styled.div<StyledHeaderContainer>`
   
   height: 100%;
-  width: 100%;
+  //width: 100%; : 어짜피 display: flex(block) 은 디폴트가 한줄 다 차지
   margin: 0 10% 0 10%;
   display: flex;
   

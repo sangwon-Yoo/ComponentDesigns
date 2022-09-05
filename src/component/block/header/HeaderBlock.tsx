@@ -19,9 +19,9 @@ export default function HeaderBlock({ bgColorDiv, bigColorContainer, widthDivLef
     return (
         <StyledHeaderBox heightP={'5rem'} heightM={'3rem'}>
             <StyledHeaderContainer bgColor={bigColorContainer} direction={'row'}>
-                <StyledFlexItemDiv width={widthDivLeft} bgColor={bgColorDiv}>(1)</StyledFlexItemDiv>
+                {/*<StyledFlexItemDiv width={widthDivLeft} bgColor={bgColorDiv}>(1)</StyledFlexItemDiv>
                 <StyledFlexItemDiv width={widthDivMid} bgColor={bgColorDiv}>(2)</StyledFlexItemDiv>
-                <StyledFlexItemDiv width={widthDivRight} bgColor={bgColorDiv}>(3)</StyledFlexItemDiv>
+                <StyledFlexItemDiv width={widthDivRight} bgColor={bgColorDiv}>(3)</StyledFlexItemDiv>*/}
             </StyledHeaderContainer>
         </StyledHeaderBox>
     );

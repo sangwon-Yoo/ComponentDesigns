@@ -7,7 +7,7 @@ export interface StyledFlexContainerProps {
 
 const StyledFlexContainer = styled.div<StyledFlexContainerProps>`
   
-  //100vw, 100vh 쓰면 가능하긴 한데 overflow 시 보기 안좋음. 
+  //100vw, 100vh 쓰면 가능하긴 한데 overflow 시 보기 안좋음. 짤림.
   height: 100%;
   width: 100%;
   display: flex;
