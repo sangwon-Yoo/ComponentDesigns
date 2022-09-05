@@ -18,5 +18,3 @@ export const StyledHeaderContainer = styled.div<StyledHeaderContainer>`
   
   background-color: ${props => props.bgColor || props.theme.color.bg.primary};
 `;
-
-export default StyledHeaderContainer;
