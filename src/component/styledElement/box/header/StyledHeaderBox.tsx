@@ -8,13 +8,13 @@ export interface StyledHeaderBoxProps {
 
 const StyledHeaderBox = styled.div<StyledHeaderBoxProps>`
   position: fixed;
-  width: 100%;
   z-index: 10;
   top: 0;
-  left: 0;
+  left: 0; right: 0; //width 100% 대신 이처럼 쓰면 padding right 오류가 안난다.
   border-bottom: 1px solid #DDDDDD;
   box-shadow: 0px 2px 3px rgb(0 0 0 / 4%);
   background-color: ${props => props.bgColor || props.theme.color.bg.secondary};
+  padding: 0 10% 0 10%;
   
   //스마트폰 사이즈 이하
   @media all and (max-width: 319px) {

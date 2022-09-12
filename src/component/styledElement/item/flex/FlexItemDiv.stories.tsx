@@ -17,9 +17,6 @@ const Template: ComponentStory<typeof WrapperStyled> = (args) => <WrapperStyled 
 
 const SFlexItemDiv = Template.bind({});
 
-SFlexItemDiv.args = {
-    width: '4rem',
-    height: '3rem',
-}
+SFlexItemDiv.args = {};
 
 export { SFlexItemDiv };

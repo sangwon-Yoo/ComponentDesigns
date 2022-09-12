@@ -10,7 +10,7 @@ export default {
     },
 } as ComponentMeta<typeof HeaderBlock>;
 
-const Template: ComponentStory<typeof HeaderBlock> = (args) => <HeaderBlock {...args} />;
+const Template: ComponentStory<typeof HeaderBlock> = () => <HeaderBlock />;
 
 const SHeaderWithFlex = Template.bind({});
 
