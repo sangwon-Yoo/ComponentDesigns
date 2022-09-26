@@ -6,8 +6,8 @@ export interface StyledFlexItemSectionProps {
 }
 
 const StyledFlexItemSection = styled.section<StyledFlexItemSectionProps>`
-  flex: 0 0 auto;
-  height: ${props => props.height || '90vh'};
+  
+  flex: 0 0 ${props => props.height || '90vh'};
   background-color: ${props => props.bgColor || props.theme.color.bg.secondary};
 
   //스마트폰 사이즈 이하

@@ -1,6 +1,6 @@
 import StyledHeaderBox from "../../styledElement/box/header/StyledHeaderBox";
-import StyledHeaderContainer from "../../styledElement/container/flex/StyledHeaderContainer";
 import StyledFlexItemDiv from "../../styledElement/item/flex/StyledFlexItemDiv";
+import StyledFlexContainer from "../../styledElement/container/flex/StyledFlexContainer";
 
 export default function HeaderBlock() {
 
@@ -8,11 +8,21 @@ export default function HeaderBlock() {
 
     return (
         <StyledHeaderBox heightP={'5rem'} heightM={'3rem'}>
-            <StyledHeaderContainer direction={'row'}>
-                <StyledFlexItemDiv>(1)</StyledFlexItemDiv>
-                <StyledFlexItemDiv>(2)</StyledFlexItemDiv>
-                <StyledFlexItemDiv>(3)</StyledFlexItemDiv>
-            </StyledHeaderContainer>
+            <StyledFlexContainer flexDirection={"row"} justifyContent={'space-between'} bgColor={'#111111'}>
+                <StyledFlexItemDiv>
+                    <StyledFlexContainer flexDirection={"row"} justifyContent={'flex-start'} bgColor={'#111111'}>
+                        <StyledFlexItemDiv size={'3rem'}>메인로고</StyledFlexItemDiv>
+                        <StyledFlexItemDiv size={'3rem'}>메뉴</StyledFlexItemDiv>
+                    </StyledFlexContainer>
+                </StyledFlexItemDiv>
+                <StyledFlexItemDiv size={'50%'}>중간</StyledFlexItemDiv>
+                <StyledFlexItemDiv>
+                    <StyledFlexContainer flexDirection={"row"} justifyContent={'flex-end'} bgColor={'#111111'}>
+                        <StyledFlexItemDiv>SNS</StyledFlexItemDiv>
+                        <StyledFlexItemDiv>국가</StyledFlexItemDiv>
+                    </StyledFlexContainer>
+                </StyledFlexItemDiv>
+            </StyledFlexContainer>
         </StyledHeaderBox>
     );
 };

@@ -2,21 +2,21 @@ import styled, { css } from "styled-components";
 
 export interface StyledHeaderContainer {
     bgColor?: string;
-    direction: 'row' | 'column';
+    flexDirection: 'row' | 'column';
 }
 
 const StyledHeaderContainer = styled.div<StyledHeaderContainer>`
   
-  ${props => props.direction === 'row' && css`
+  ${props => props.flexDirection === 'row' && css`
       height: 100%;
   `}
-  ${props => props.direction === 'column' && css`
+  ${props => props.flexDirection === 'column' && css`
       width: 100%;
   `}
   
   display: flex;
   /* flex 방향 설정 */
-  flex-direction: ${props => props.direction};
+  flex-direction: ${props => props.flexDirection};
   justify-content: space-between; 
   
   background-color: ${props => props.bgColor || props.theme.color.bg.primary};

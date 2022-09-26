@@ -36,7 +36,7 @@ const FlexLayoutWithMain = ({ bgColorBox, bgColorContainer, bgColorMain, bgColor
 
     return (
         <StyledViewportBox bgColor={bgColorBox}>
-            <StyledFlexContainer direction={'column'} bgColor={bgColorContainer}>
+            <StyledFlexContainer flexDirection={'column'} justifyContent={'space-between'} bgColor={bgColorContainer}>
                 <StyledFlexItemMain bgColor={bgColorMain}>
                     {mainChild}
                 </StyledFlexItemMain>

@@ -10,7 +10,7 @@ export default function BlogHome() {
     return (
         <>
             <HeaderBlock />
-            <StyledFlexContainer direction={'column'} bgColor={'#333333'}>
+            <StyledFlexContainer flexDirection={'column'} justifyContent={'space-between'} bgColor={'#333333'}>
                 <StyledFlexItemMain bgColor={'#444444'}>
                 </StyledFlexItemMain>
                 <StyledFlexItemSection bgColor={'#555555'}>

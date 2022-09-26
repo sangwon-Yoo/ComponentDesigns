@@ -6,8 +6,7 @@ export interface StyledFlexItemMainProps {
 }
 
 const   StyledFlexItemMain = styled.main<StyledFlexItemMainProps>`
-  flex: 0 0 auto;
-  height: ${props => props.height || '50vh'};
+  flex: 0 0 ${props => props.height || '50vh'};
   /*
   flex: 0 0 auto 의미
   flex-grow = 0 : flex-basis 보다 커질 수 없음, flex-shrink = 0: flex-basis 보다 줄어들 수 없음, flex-basis = auto : 콘텐츠 크기
