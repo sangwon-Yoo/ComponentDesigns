@@ -11,7 +11,7 @@ export default function BlogHome() {
         <>
             <HeaderBlock />
             <StyledFlexContainer flexDirection={'column'} justifyContent={'space-between'} bgColor={'#333333'}>
-                <StyledFlexItemMain bgColor={'#444444'}>
+                <StyledFlexItemMain bgImg={'/img/gradationBg.jpeg'}>
                 </StyledFlexItemMain>
                 <StyledFlexItemSection bgColor={'#555555'}>
                 </StyledFlexItemSection>

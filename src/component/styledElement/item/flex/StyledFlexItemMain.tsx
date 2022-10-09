@@ -3,9 +3,10 @@ import styled from "styled-components";
 export interface StyledFlexItemMainProps {
     bgColor?: string;
     height?: string;
+    bgImg?: string;
 }
 
-const   StyledFlexItemMain = styled.main<StyledFlexItemMainProps>`
+const StyledFlexItemMain = styled.main<StyledFlexItemMainProps>`
   flex: 0 0 ${props => props.height || '50vh'};
   /*
   flex: 0 0 auto 의미
@@ -13,6 +14,8 @@ const   StyledFlexItemMain = styled.main<StyledFlexItemMainProps>`
   width 의 경우 align-item : stretch(default)에 의해 끝까지 늘여짐
   */
   background-color: ${props => props.bgColor || props.theme.color.bg.secondary};
+  background-image: url(${props => props.bgImg});
+  background-size: cover;
 `;
 
 export default StyledFlexItemMain;

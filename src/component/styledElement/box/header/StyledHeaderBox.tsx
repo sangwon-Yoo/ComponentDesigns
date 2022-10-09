@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import {isMobile} from "style/mediaQuery";
 
 export interface StyledHeaderBoxProps {
     heightM: string;
@@ -15,26 +16,23 @@ const StyledHeaderBox = styled.div<StyledHeaderBoxProps>`
   box-shadow: 0px 2px 3px rgb(0 0 0 / 4%);
   background-color: ${props => props.bgColor || props.theme.color.bg.secondary};
   padding: 0 10% 0 10%;
+  height: ${props => props.heightP};
   
-  //스마트폰 사이즈 이하
-  @media all and (max-width: 319px) {
+  ${isMobile} {
     height: ${props => props.heightM};
   }
-  //스마트폰 320px ~ 768px
-  @media all and (min-width: 320px) and (max-width: 768px) {
-    height: ${props => props.heightM};
+
+  & .padding01 {
+    padding: 1rem 1rem 1rem 1rem;
+    ${isMobile} {
+      padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    }
   }
-  //태블릿 768px ~ 1024px
-  @media all and (min-width: 769px) and (max-width: 1024px) {
-    height: ${props => props.heightP};
-  }
-  //pc 1024px ~ 1440px
-  @media all and (min-width: 1025px) and (max-width: 1440px){
-    height: ${props => props.heightP};
-  }
-  //max-width 초과시
-  @media all and (min-width: 1441px) {
-    height: ${props => props.heightP};
+  & .padding02 {
+    padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+    ${isMobile} {
+      padding: 0.8rem 0.8rem 0.8rem 0.8rem;
+    }
   }
 `;
 

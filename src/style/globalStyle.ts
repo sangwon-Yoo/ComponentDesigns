@@ -89,20 +89,25 @@ const GlobalStyle = createGlobalStyle`
     border-spacing: 0;
   }
 
+  /* Reset CSS End */
+  
   /*
-      ++ global CSS
-      Reset End,
       Global Custom CSS Start
   */
   /*
     html, body, StyledFlexContainer 를 다 100% 주는 이유는 
     100vh 100vw는 뷰포트기 때문에 스크룰 넘치는 영역은 커버가 안된다.
     100%를 주면 실제 크기는 자식들 중 최초로 실제 크기를 가지는 아이들에 의해 정해진다.
-    이번 경우에는 StyledFlexContainer 의 자식들.
+    이번 경우에는 StyledFlexContainer 의 자식들. >> 아닌거 같은데.
+    Div 의 기본 속성인 display : block 의 경우 height는 기본 0, width는 부모 컨테이너를 다 차지한다.
+    기본적으로 컨테이너들의 높이를 안주고, 자식들 중에 높이가 생기면 자연스레 높이가 생기는 것이 원칙.
   */
   html {
-    height: 100%;
-    width: 100%;
+    /*height: 100%;*/
+    /*width: 100%;*/
+    /* html 은 최상단이다. 100%를 먹여버리면 뷰포트 영역을 부모로 인식하고 써버리게 된다.
+      아무런옵션을 주지 않으면 자식들 중 실제 크기가 있는 아이들 기준으로 높이를 가지게 된다.
+    */
   }
   
   body {
@@ -113,12 +118,16 @@ const GlobalStyle = createGlobalStyle`
     background-color: ${props => props.theme.color.bg.secondary}; //블렉테마 등
   }
   
+  .img-contain {
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+  }
+  
 
   /*
       Global Custom CSS End
   */
-
-  /* Reset CSS End */
 `;
 
 export default GlobalStyle;
