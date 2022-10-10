@@ -1,7 +1,8 @@
 import { ComponentMeta, ComponentStory } from "@storybook/react";
 import StyledHeaderBox, { StyledHeaderBoxProps } from "./StyledHeaderBox";
+import {StyledFlexProps} from "../../flex/StyledFlex";
 
-function WrapperStyled(props: StyledHeaderBoxProps) {
+function WrapperStyled(props: StyledFlexProps) {
    return <StyledHeaderBox {...props} />;
 }
 
@@ -18,9 +19,7 @@ const Template: ComponentStory<typeof WrapperStyled> = (args) => <WrapperStyled 
 const SHeaderBox = Template.bind({});
 
 SHeaderBox.args = {
-    heightM: '3rem',
-    heightP: '5rem',
-    bgColor: '#fff',
+
 };
 
 export { SHeaderBox };

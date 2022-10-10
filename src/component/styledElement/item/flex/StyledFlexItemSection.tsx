@@ -1,15 +1,11 @@
 import styled from "styled-components";
 import { Media } from "style/mediaQuery";
 
-export interface StyledFlexItemSectionProps {
-    bgColor?: string;
-    height?: string;
-}
-
-const StyledFlexItemSection = styled.section<StyledFlexItemSectionProps>`
+const StyledFlexSection = styled.section`
   
-  flex: 0 0 ${props => props.height || '90vh'};
-  background-color: ${props => props.bgColor || props.theme.color.bg.secondary};
+  flex: 0 0 700px;
+  
+  background-color: ${props => props.theme.color.bg.secondary};
 
   ${Media.tablet} {
     margin: 0 10% 0 10%;
@@ -24,4 +20,4 @@ const StyledFlexItemSection = styled.section<StyledFlexItemSectionProps>`
   }
 `;
 
-export default StyledFlexItemSection;
+export default StyledFlexSection;

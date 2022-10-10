@@ -118,13 +118,6 @@ const GlobalStyle = createGlobalStyle`
     background-color: ${props => props.theme.color.bg.secondary}; //블렉테마 등
   }
   
-  .img-contain {
-    object-fit: contain;
-    height: 100%;
-    width: 100%;
-  }
-  
-
   /*
       Global Custom CSS End
   */

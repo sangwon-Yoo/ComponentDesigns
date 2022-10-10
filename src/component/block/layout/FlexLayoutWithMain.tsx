@@ -29,7 +29,7 @@ const FlexLayoutWithMain = ({ bgColorBox, bgColorContainer, bgColorMain, bgColor
     });
 
     const sections = React.Children.map(sectionChildren, (child, idx) =>
-        <StyledFlexItemSection bgColor={bgColorSection}>
+        <StyledFlexItemSection >
             {child}
         </StyledFlexItemSection>
     );
@@ -37,7 +37,7 @@ const FlexLayoutWithMain = ({ bgColorBox, bgColorContainer, bgColorMain, bgColor
     return (
         <StyledViewportBox bgColor={bgColorBox}>
             <StyledFlexContainer flexDirection={'column'} justifyContent={'space-between'} bgColor={bgColorContainer}>
-                <StyledFlexItemMain bgColor={bgColorMain}>
+                <StyledFlexItemMain >
                     {mainChild}
                 </StyledFlexItemMain>
                 {sections}
