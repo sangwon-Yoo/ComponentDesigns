@@ -1,8 +1,7 @@
 import StyledMainContentsBox from "../../styledElement/box/mainContents/StyledMainContentsBox";
-import StyledFlexItemDiv from "../../styledElement/item/flex/StyledFlexItemDiv";
 import StyledText from "../../styledElement/text/StyledText";
-import StyledFlexContainer from "../../styledElement/container/flex/StyledFlexContainer";
 import StyledFlex from "../../styledElement/flex/StyledFlex";
+import { StyledTransparentAnchor } from "../../styledElement/item/button&anchor/StyledAnchor";
 
 export default function MainContentsBlock() {
 
@@ -14,6 +13,10 @@ export default function MainContentsBlock() {
                 </StyledFlex>
                 <StyledFlex flex={'0 0 3rem'} justifyContent={'center'} alignItem={'center'}>
                     <StyledText fontColor={'#ffffff'} fontSize={'2rem'}>Yoo's Blog</StyledText>
+                </StyledFlex>
+                <StyledFlex flex={'0 0 auto'} justifyContent={'center'} flexWrap={'wrap'}>
+                    <StyledTransparentAnchor width={'10rem'} height={'2.8rem'} fontSize={'1.4rem'}>sdf</StyledTransparentAnchor>
+                    <StyledTransparentAnchor width={'10rem'} height={'2.8rem'} fontSize={'1.4rem'}>sdf</StyledTransparentAnchor>
                 </StyledFlex>
             </StyledFlex>
         </StyledMainContentsBox>

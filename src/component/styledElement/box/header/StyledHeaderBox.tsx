@@ -41,12 +41,14 @@ const StyledHeaderBox = styled(StyledFlex)`
   
     border-bottom: 1px solid #DDDDDD;
     box-shadow: 0px 2px 3px rgb(0 0 0 / 4%);
-    background-color: ${props => props.bgColor || props.theme.color.bg.secondary};
+    background-color: #f9f9f3;
     padding: 0 10% 0 10%;
-
+  
     // 클래스 > 클래스가 되기 때문에 더 구체적인 클래스가 되므로 우선순위가 높아진다. 
     & .img-contain {
       object-fit: contain;
+      border-radius: 4.5px;
+      box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
       height: 100%;
       width: 100%;
     }
@@ -54,13 +56,25 @@ const StyledHeaderBox = styled(StyledFlex)`
     height: 5rem;
     & .header-item {
       flex: 0 0 32px;
-      padding: 1rem 1rem 1rem 1rem;
+      padding: 1.6rem 1.6rem 1.6rem 1.6rem;
+    }
+    & .header-logo {
+      flex: 0 0 28px;
+      padding: 1.6rem 1.6rem 1.6rem 1.6rem;
     }
   
     ${isMobile} {
       height: 3rem;
+      border-bottom: unset;
+      background-color: #111111;
+      opacity: 0.875;
+      padding: 0 8px 0 8px;
       & .header-item {
         flex: 0 0 20px;
+        padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+      }
+      & .header-logo {
+        flex: 0 0 28px;
         padding: 0.5rem 0.5rem 0.5rem 0.5rem;
       }
     }

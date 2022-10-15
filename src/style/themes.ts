@@ -3,7 +3,7 @@ import { DefaultTheme } from "styled-components";
 const myBlogTheme: DefaultTheme = {
     color: {
         bg: {
-            primary: '#F68989',
+            primary: '#19CEEB',
             secondary: '#444555',
         },
         font: {

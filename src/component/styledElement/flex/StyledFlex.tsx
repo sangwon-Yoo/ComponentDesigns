@@ -7,6 +7,8 @@ export interface StyledFlexProps {
     flexDirection?: string; //default : row
     justifyContent?: string; //default : flex-start
     alignItem?: string; //default : stretch
+    flexWrap?: string; //default : no-wrap
+
     flex?: string;  //flex item 도 가능
     bgColor?: string; //디버깅용
 }
@@ -16,6 +18,7 @@ const StyledFlex = styled.div<StyledFlexProps>`
     flex-direction: ${props => props.flexDirection};
     justify-content: ${props => props.justifyContent};
     align-items: ${props => props.alignItem};
+    flex-wrap: ${props => props.flexWrap};
   
     flex: ${props => props.flex};
   
