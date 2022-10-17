@@ -14,7 +14,7 @@ export default function MainContentsBlock() {
                 <StyledFlex flex={'0 0 3rem'} justifyContent={'center'} alignItem={'center'}>
                     <StyledText fontColor={'#ffffff'} fontSize={'2rem'}>Yoo's Blog</StyledText>
                 </StyledFlex>
-                <StyledFlex flex={'0 0 auto'} justifyContent={'center'} flexWrap={'wrap'}>
+                <StyledFlex justifyContent={'center'} alignItem={'center'} className={'button-area'}>
                     <StyledTransparentAnchor width={'10rem'} height={'2.8rem'} fontSize={'1.4rem'}>sdf</StyledTransparentAnchor>
                     <StyledTransparentAnchor width={'10rem'} height={'2.8rem'} fontSize={'1.4rem'}>sdf</StyledTransparentAnchor>
                 </StyledFlex>

@@ -1,8 +1,13 @@
 import StyledHeaderBox from "../../styledElement/box/header/StyledHeaderBox";
-import StyledFlexItemDiv from "../../styledElement/item/flex/StyledFlexItemDiv";
 import StyledFlex from "../../styledElement/flex/StyledFlex";
-import { Menu, MailSend, Instagram } from "@styled-icons/remix-fill";
-import {myBlogTheme} from "../../../style/themes";
+import { StyledFlexIconButton } from "../../styledElement/item/button&anchor/StyledButton";
+import { StyledFlexIconAnchor } from "../../styledElement/item/button&anchor/StyledAnchor";
+import {
+    StyledIconGithub,
+    StyledIconInstagram,
+    StyledIconMail,
+    StyledIconMenu
+} from "../../styledElement/item/button&anchor/StyledIcon";
 
 export default function HeaderBlock() {
 
@@ -10,22 +15,25 @@ export default function HeaderBlock() {
 
     return (
         <StyledHeaderBox justifyContent={'space-between'}>
-            <StyledFlex flex={'0 0 30%'} justifyContent={'flex-start'}>
-                <StyledFlex className={'header-logo'}>
-                    <img src={'/img/wonny.jpeg'} className={'img-contain'} alt={'블로그 로고'} />
-                </StyledFlex>
-                <StyledFlex className={'header-item'} >
-                    <Menu title={'메뉴'} color={myBlogTheme.color.bg.primary} width={'100%'} />
-                </StyledFlex>
+            <StyledFlex flex={'0 0 30%'} justifyContent={'flex-start'} alignItem={'center'}>
+                <StyledFlexIconAnchor className={'header-item'} justifyContent={'center'} alignItem={'center'}>
+                    <img src={'/img/wonny.jpeg'} width={'2rem'} height={'2rem'} className={'img-contain'} alt={'블로그 로고'} />
+                </StyledFlexIconAnchor>
+                <StyledFlexIconButton className={'header-item'} justifyContent={'center'} alignItem={'center'}>
+                    <StyledIconMenu title={'메뉴'} width={'100%'} height={'2rem'} className={'hover-able'} />
+                </StyledFlexIconButton>
             </StyledFlex>
             <StyledFlex flex={'1 1 40%'} />
-            <StyledFlex flex={'0 0 30%'} justifyContent={'flex-end'}>
-                <StyledFlex className={'header-item'}>
-                    <MailSend title={'이메일'} color={myBlogTheme.color.bg.primary} width={'100%'} />
-                </StyledFlex>
-                <StyledFlex className={'header-item'}>
-                    <Instagram title={'인스타그램'} color={myBlogTheme.color.bg.primary} width={'100%'} />
-                </StyledFlex>
+            <StyledFlex flex={'0 0 30%'} justifyContent={'flex-end'} alignItem={'center'}>
+                {/*<StyledFlexIconButton className={'header-item'} justifyContent={'center'} alignItem={'center'}>
+                    <StyledIconMail title={'메일주소'} width={'100%'} height={'2rem'} className={'hover-able'} />
+                </StyledFlexIconButton>*/}
+                <StyledFlexIconAnchor className={'header-item'} justifyContent={'center'} alignItem={'center'}>
+                    <StyledIconInstagram title={'인스타그램'} width={'100%'} height={'2rem'} className={'hover-able'} />
+                </StyledFlexIconAnchor>
+                <StyledFlexIconAnchor className={'header-item'} justifyContent={'center'} alignItem={'center'}>
+                    <StyledIconGithub title={'깃허브'} width={'100%'} height={'2rem'} className={'hover-able'} />
+                </StyledFlexIconAnchor>
             </StyledFlex>
         </StyledHeaderBox>
     );
