@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {isMobile} from "../../../../style/mediaQuery";
+import {isMobile} from "../../style/mediaQuery";
 
 export interface StyledFlexItemDivProps {
     flex?: string;

@@ -2,7 +2,7 @@ import styled, { css } from "styled-components";
 
 export interface StyledFlexContainerProps {
     flexDirection?: string; //default : row
-    justifyContent?: string; //default : flex-start
+    justifyContent?: string; //default : flex2-start
     alignItem?: string; //default : stretch
     bgColor?: string; //디버깅용
 }

@@ -1,8 +1,8 @@
 import styled from "styled-components";
-import { StyledFlexMain } from "../../flex/StyledFlex";
+import { StyledFlexMain } from "../../container/flex/StyledFlex";
 import { isMobile } from "../../../../style/mediaQuery";
 
-const StyledMainContentsBox = styled(StyledFlexMain)`
+const StyledMainRepresentativeBox = styled(StyledFlexMain)`
   
     background-image: url('/img/gradationBg.jpeg');
     background-size: cover;
@@ -19,4 +19,4 @@ const StyledMainContentsBox = styled(StyledFlexMain)`
     }
 `;
 
-export default StyledMainContentsBox;
+export default StyledMainRepresentativeBox;

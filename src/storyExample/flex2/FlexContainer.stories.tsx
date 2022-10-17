@@ -6,7 +6,7 @@ function WrapperStyled(props : StyledFlexContainerProps) {
 };
 
 export default {
-    title: 'component/styledElement/container/flex',
+    title: 'component/styledElement/container/flex2',
     component: WrapperStyled,
     argTypes: {
         bgColor: { control: 'color' },

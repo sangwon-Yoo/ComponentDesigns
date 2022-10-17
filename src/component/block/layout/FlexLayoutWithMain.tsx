@@ -1,7 +1,7 @@
 import React, {ReactChild, ReactChildren, ReactNode} from "react";
-import StyledFlexContainer from "../../styledElement/container/flex/StyledFlexContainer";
-import StyledFlexItemMain from "../../styledElement/item/flex/StyledFlexItemMain";
-import StyledFlexItemSection from "../../styledElement/item/flex/StyledFlexItemSection";
+import StyledFlexContainer from "../../../storyExample/flex2/StyledFlexContainer";
+import StyledFlexItemMain from "../../../storyExample/flex/StyledFlexItemMain";
+import StyledFlexItemSection from "../../../storyExample/flex/StyledFlexItemSection";
 import StyledViewportBox from "../../styledElement/box/viewport/StyledViewportBox";
 
 interface flexLayoutWithMainProps {

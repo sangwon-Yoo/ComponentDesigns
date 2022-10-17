@@ -1,5 +1,5 @@
 import StyledHeaderBox from "../../styledElement/box/header/StyledHeaderBox";
-import StyledFlex from "../../styledElement/flex/StyledFlex";
+import StyledFlex from "../../styledElement/container/flex/StyledFlex";
 import { StyledFlexIconButton } from "../../styledElement/item/button&anchor/StyledButton";
 import { StyledFlexIconAnchor } from "../../styledElement/item/button&anchor/StyledAnchor";
 import {
@@ -15,8 +15,8 @@ export default function HeaderBlock() {
 
     return (
         <StyledHeaderBox justifyContent={'space-between'}>
-            <StyledFlex flex={'0 0 30%'} justifyContent={'flex-start'} alignItem={'center'}>
-                <StyledFlexIconAnchor className={'header-item'} justifyContent={'center'} alignItem={'center'}>
+            <StyledFlex flex={'0 0 30%'} justifyContent={'flex2-start'} alignItem={'center'}>
+                <StyledFlexIconAnchor className={'header-item'} justifyContent={'center'} alignItem={'center'} noHover={true}>
                     <img src={'/img/wonny.jpeg'} width={'2rem'} height={'2rem'} className={'img-contain'} alt={'블로그 로고'} />
                 </StyledFlexIconAnchor>
                 <StyledFlexIconButton className={'header-item'} justifyContent={'center'} alignItem={'center'}>

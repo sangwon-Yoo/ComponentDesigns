@@ -7,7 +7,7 @@ const myBlogTheme: DefaultTheme = {
             pointer: '#66f1e1'
         },
         bg: {
-            primary: '#19CEEB',
+            primary: '#444555',
             secondary: '#444555',
         },
         font: {

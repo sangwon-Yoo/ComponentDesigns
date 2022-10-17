@@ -3,7 +3,7 @@ import styled, { css } from "styled-components";
 export interface StyledHeaderContainer {
     bgColor?: string;
     flexDirection: 'row' | 'column';
-    justifyContent: 'flex-start' | 'flex-end' | 'center' | 'space-between' | 'space-around' | 'space-evenly';
+    justifyContent: 'flex2-start' | 'flex2-end' | 'center' | 'space-between' | 'space-around' | 'space-evenly';
     alignItem?: string;
 }
 

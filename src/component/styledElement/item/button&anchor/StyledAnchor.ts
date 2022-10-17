@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, {css} from "styled-components";
 import { isMobile } from "../../../../style/mediaQuery";
 
 interface StyledTransparentAnchorProps {
@@ -33,11 +33,11 @@ export const StyledTransparentAnchor = styled.a<StyledTransparentAnchorProps>`
 
 interface StyledFlexAnchorProps {
     flexDirection?: string; //default : row
-    justifyContent?: string; //default : flex-start
+    justifyContent?: string; //default : flex2-start
     alignItem?: string; //default : stretch
     flexWrap?: string; //default : no-wrap
 
-    flex?: string;  //flex item 도 가능
+    flex?: string;  //flex2 item 도 가능
 }
 export const StyledFlexAnchor = styled.a<StyledFlexAnchorProps>`
   
@@ -53,6 +53,7 @@ export const StyledFlexAnchor = styled.a<StyledFlexAnchorProps>`
 interface StyledFlexIconAnchorProps extends StyledFlexAnchorProps {
     margin?: string;
     padding?: string;
+    noHover?: boolean;
 }
 export const StyledFlexIconAnchor = styled(StyledFlexAnchor)<StyledFlexIconAnchorProps>`
 
@@ -70,16 +71,18 @@ export const StyledFlexIconAnchor = styled(StyledFlexAnchor)<StyledFlexIconAncho
     border-radius: 2px;
     transition: background-color .12s ease;
   
-    &:hover {
-      background-color: #ececeb;
-    }
-  
-    ${isMobile} {
+    ${props => (props.noHover !== true) && css`
       &:hover {
-        background-color: unset;
-        & .hover-able {
-          color: ${props => props.theme.color.signature.pointer};
+        background-color: #ececeb;
+      }
+
+      ${isMobile} {
+        &:hover {
+          background-color: unset;
+          & .hover-able {
+            color: ${props => props.theme.color.signature.pointer};
+          }
         }
       }
-    }
+    `};
 `;

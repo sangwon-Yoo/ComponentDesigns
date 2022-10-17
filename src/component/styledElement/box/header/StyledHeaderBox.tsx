@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import {isMobile} from "style/mediaQuery";
-import StyledFlex from "../../flex/StyledFlex";
+import StyledFlex from "../../container/flex/StyledFlex";
 
 export interface StyledHeaderBoxProps {
     heightP: string;
