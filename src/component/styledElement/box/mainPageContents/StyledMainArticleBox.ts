@@ -15,6 +15,11 @@ const StyledMainArticleBox = styled(StyledFlexSection)`
         margin-left: auto;
         margin-right: auto;
     }
+  
+    & .contents-text {
+      overflow: hidden;
+      margin: 0 1rem;
+    }
 `;
 
 export default StyledMainArticleBox;

@@ -14,7 +14,7 @@ export default function BlogHome() {
             <StyledFlex flexDirection={'column'} bgColor={'#678678'}>
                 <MainRepresentativeBlock />
                 <MainArticleBlock />
-                <MainArticleBlock />
+                {/*<MainArticleBlock />*/}
                 {/*<StyledFlexSection>
                 </StyledFlexSection>
                 <StyledFlexSection>

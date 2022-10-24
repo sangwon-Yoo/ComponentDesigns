@@ -56,14 +56,6 @@ interface StyledFlexIconAnchorProps extends StyledFlexAnchorProps {
     noHover?: boolean;
 }
 export const StyledFlexIconAnchor = styled(StyledFlexAnchor)<StyledFlexIconAnchorProps>`
-
-    /* default style 제거 */
-    background: none;
-    color: inherit;
-    border: none;
-    font: inherit;
-    cursor: pointer;
-    outline: inherit;
   
     margin: ${props => props.margin || 0};
     padding: ${props => props.padding || 0};

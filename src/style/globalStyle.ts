@@ -118,6 +118,16 @@ const GlobalStyle = createGlobalStyle`
     background-color: ${props => props.theme.color.bg.secondary}; //블렉테마 등
   }
   
+  /* a, button 태그 긱본 스타일 없애기 */
+  a, button {
+    background: none;
+    color: inherit;
+    border: none;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+  }
+  
   /*
       Global Custom CSS End
   */

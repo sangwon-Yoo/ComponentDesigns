@@ -51,14 +51,6 @@ interface StyledFlexIconButtonProps extends StyledFlexButtonProps {
     noHover?: boolean;
 }
 export const StyledFlexIconButton = styled(StyledFlexButton)<StyledFlexIconButtonProps>`
-
-    /* default style 제거 */
-    background: none;
-    color: inherit;
-    border: none;
-    font: inherit;
-    cursor: pointer;
-    outline: inherit;
   
     margin: ${props => props.margin || 0};
     padding: ${props => props.padding || 0};
