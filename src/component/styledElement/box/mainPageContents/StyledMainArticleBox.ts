@@ -16,8 +16,22 @@ const StyledMainArticleBox = styled(StyledFlexSection)`
         margin-right: auto;
     }
   
+    & .contents-area {
+      max-width: 72%;
+    }
+  
     & .contents-text {
       overflow: hidden;
+      line-height: normal;
+      margin: 0 1rem;
+    }
+
+    & .contents-title {
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      
+      line-height: normal;
       margin: 0 1rem;
     }
 `;
