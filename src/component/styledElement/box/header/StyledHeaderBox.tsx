@@ -69,7 +69,7 @@ const StyledHeaderBox = styled(StyledFlex)`
       padding: 0 8px 0 8px;
       
       & .header-item {
-        flex: 0 0 1.25rem;
+        flex: 0 0 1.3rem;
         margin: 0.5rem;
       }
 

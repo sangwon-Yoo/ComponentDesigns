@@ -20,7 +20,7 @@ const StyledFlex = styled.div<StyledFlexProps>`
     align-items: ${props => props.alignItem};
     flex-wrap: ${props => props.flexWrap};
   
-    flex: ${props => props.flex};
+    flex: ${props => props.flex}; //flex 박스의 크기는 padding, margin 을 제외한 순수한 콘텐츠 크기(CSS 박스모델의 content)
   
     background-color: ${props => props.bgColor};
 `;

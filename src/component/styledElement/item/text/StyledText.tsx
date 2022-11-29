@@ -35,4 +35,15 @@ const StyledFlexParagraph = styled.p<StyledFlexParagraphProps>`
     margin: ${props => props.margin};
 `;
 
-export { StyledSpanText, StyledFlexParagraph };
+type StyledFlexLineClampParagraphProps = StyledFlexParagraphProps & {
+    lineClamp: number;
+};
+const StyledFlexLineClampParagraph = styled(StyledFlexParagraph)<StyledFlexLineClampParagraphProps>`
+    
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: ${props => props.lineClamp};
+    overflow: hidden;
+`;
+
+export { StyledSpanText, StyledFlexParagraph, StyledFlexLineClampParagraph };

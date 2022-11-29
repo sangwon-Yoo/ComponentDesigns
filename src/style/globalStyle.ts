@@ -108,11 +108,11 @@ const GlobalStyle = createGlobalStyle`
     /* html 은 최상단이다. 100%를 먹여버리면 뷰포트 영역을 부모로 인식하고 써버리게 된다.
       아무런옵션을 주지 않으면 자식들 중 실제 크기가 있는 아이들 기준으로 높이를 가지게 된다.
     */
+    font-family: NotoSansKR-Regular; //자식들은 inherit 이 활성화되어서 상속 받는다.
+    font-size: 14px; //자식들은 inherit 이 활성화되어서 상속 받는다.
   }
   
   body {
-    font-family: NotoSansKR-Regular; //자식들은 inherit 이 활성화되어서 상속 받는다.
-    font-size: 16px; //자식들은 inherit 이 활성화되어서 상속 받는다.
     height: 100%;
     width: 100%;
     background-color: ${props => props.theme.color.bg.secondary}; //블렉테마 등

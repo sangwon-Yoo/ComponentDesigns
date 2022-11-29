@@ -11,7 +11,7 @@ const myBlogTheme: DefaultTheme = {
             secondary: '#444555',
         },
         font: {
-            black: '#191919',
+            black: '#292929',
             primary: '',
             secondary: ''
         }
