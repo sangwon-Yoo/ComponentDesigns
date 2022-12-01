@@ -48,6 +48,14 @@ const StyledMainArticleBox = styled(StyledFlexSection)`
         
         overflow: hidden;
     }
+  
+    & .contents-img {
+      flex: 80% 0 0 ;
+      max-width: 80%;
+      object-fit: contain;/*cover?*/
+      /*height: 100%;
+      width: 100%;*/
+    }
 
     & .contents-title {
         line-height: normal;
@@ -67,6 +75,12 @@ const StyledMainArticleBox = styled(StyledFlexSection)`
       color: #232323;
 
       overflow: hidden;
+    }
+  
+    & .img-container {
+      max-height: 56%;
+      justify-content: flex-end;
+      margin: 0 1rem;
     }
 `;
 
