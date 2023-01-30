@@ -1,17 +1,17 @@
 import StyledSideMenuBarBox from "../../styledElement/box/sideMenuBar/StyledSideMenuBarBox";
 import StyledFlex from "../../styledElement/container/flex/StyledFlex";
-import {StyledFlexIconAnchor} from "../../styledElement/item/button&anchor/StyledAnchor";
+import { StyledFlexIconAnchor } from "../../styledElement/item/button&anchor/StyledAnchor";
 
 export default function SideMenuBarBlock() {
 
     return (
         <StyledSideMenuBarBox>
             <StyledFlex className={'side-wrapper'} flexDirection={'column'}>
-                <StyledFlex className={'side-categoryBlock'} >
-                    <StyledFlexIconAnchor flex={'0 0 2rem'} className={'logo'} alignItem={'center'} noHover={true}>
-                        <img src={'/img/wonny.jpeg'} width={'2rem'} height={'2rem'} className={'img-contain'} alt={'블로그 로고'} />
+                <StyledFlex className={'side-titleBlock'} >
+                    <StyledFlexIconAnchor flex={'0 0 2.4rem'} className={'anchor-logo'} alignItem={'center'} noHover={true}>
+                        <img src={'/img/wonny.jpeg'} width={'2.4rem'} height={'2.4rem'} className={'img-contain'} alt={'블로그 로고'} />
                     </StyledFlexIconAnchor>
-                    <b className={'category-title'}>상원's Blog</b>
+                    <b className={'titleBlock-title'}>상원's Blog</b>
                 </StyledFlex>
                 <StyledFlex className={'side-categoryBlock'} flexDirection={'column'}>
                     <b className={'category-title'}>Hello</b>

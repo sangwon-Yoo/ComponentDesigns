@@ -11,7 +11,7 @@ export default function BlogHome() {
     return (
         <>
             <HeaderBlock />
-            <SideMenuBarBlock />
+            {/*<SideMenuBarBlock />*/}
             <StyledFlex flexDirection={'column'} bgColor={'#678678'}>
                 <MainRepresentativeBlock />
                 <MainArticleBlock />

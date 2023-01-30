@@ -54,13 +54,14 @@ interface StyledFlexIconAnchorProps extends StyledFlexAnchorProps {
     margin?: string;
     padding?: string;
     noHover?: boolean;
+    borderRadius?: string;
 }
 export const StyledFlexIconAnchor = styled(StyledFlexAnchor)<StyledFlexIconAnchorProps>`
   
     margin: ${props => props.margin || 0};
     padding: ${props => props.padding || 0};
   
-    border-radius: 2px;
+    border-radius: ${props => props.borderRadius || '2px'};
     transition: background-color .12s ease;
   
     ${props => (props.noHover !== true) && css`
