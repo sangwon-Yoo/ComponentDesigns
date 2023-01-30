@@ -6,7 +6,7 @@ function WrapperStyled(props: StyledFlexItemDivProps) {
 }
 
 export default {
-    title: 'component/styledElement/item/flex',
+    title: 'component/styledElement/item/flex2',
     component: WrapperStyled,
     argTypes: {
         bgColor: { control: 'color' },
@@ -17,9 +17,6 @@ const Template: ComponentStory<typeof WrapperStyled> = (args) => <WrapperStyled 
 
 const SFlexItemDiv = Template.bind({});
 
-SFlexItemDiv.args = {
-    width: '4rem',
-    height: '3rem',
-}
+SFlexItemDiv.args = {};
 
 export { SFlexItemDiv };

@@ -5,11 +5,16 @@ import 'styled-components';
 declare module 'styled-components' {
     export interface DefaultTheme {
         color: {
+            signature: {
+                base: string;
+                pointer: string;
+            },
             bg: {
                 primary: string;
                 secondary: string;
             };
             font: {
+                black: string;
                 primary: string;
                 secondary: string;
             };

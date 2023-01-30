@@ -6,7 +6,7 @@ function WrapperStyled(props : StyledFlexContainerProps) {
 };
 
 export default {
-    title: 'component/styledElement/container/flex',
+    title: 'component/styledElement/container/flex2',
     component: WrapperStyled,
     argTypes: {
         bgColor: { control: 'color' },
@@ -19,7 +19,7 @@ const SFlexContainer = Template.bind({});
 
 SFlexContainer.args = {
     bgColor: '#dddddf',
-    direction: 'column'
+    flexDirection: 'column'
 };
 
 export { SFlexContainer };

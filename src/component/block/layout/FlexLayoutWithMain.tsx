@@ -1,7 +1,7 @@
 import React, {ReactChild, ReactChildren, ReactNode} from "react";
-import StyledFlexContainer from "../../styledElement/container/flex/StyledFlexContainer";
-import StyledFlexItemMain from "../../styledElement/item/flex/StyledFlexItemMain";
-import StyledFlexItemSection from "../../styledElement/item/flex/StyledFlexItemSection";
+import StyledFlexContainer from "../../../storyExample/flex2/StyledFlexContainer";
+import StyledFlexItemMain from "../../../storyExample/flex/StyledFlexItemMain";
+import StyledFlexItemSection from "../../../storyExample/flex/StyledFlexItemSection";
 import StyledViewportBox from "../../styledElement/box/viewport/StyledViewportBox";
 
 interface flexLayoutWithMainProps {
@@ -29,15 +29,15 @@ const FlexLayoutWithMain = ({ bgColorBox, bgColorContainer, bgColorMain, bgColor
     });
 
     const sections = React.Children.map(sectionChildren, (child, idx) =>
-        <StyledFlexItemSection bgColor={bgColorSection}>
+        <StyledFlexItemSection >
             {child}
         </StyledFlexItemSection>
     );
 
     return (
         <StyledViewportBox bgColor={bgColorBox}>
-            <StyledFlexContainer direction={'column'} bgColor={bgColorContainer}>
-                <StyledFlexItemMain bgColor={bgColorMain}>
+            <StyledFlexContainer flexDirection={'column'} justifyContent={'space-between'} bgColor={bgColorContainer}>
+                <StyledFlexItemMain >
                     {mainChild}
                 </StyledFlexItemMain>
                 {sections}
